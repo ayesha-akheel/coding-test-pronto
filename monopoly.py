@@ -22,3 +22,8 @@ class Player:
             print(f"{self.name} buys {property['name']} for ${property['price']}")
         else:
             print(f"{self.name} cannot afford {property['name']}!")
+
+    def collect_money(self, amount):
+        """Collects money (e.g., passing GO)."""
+        self.money += amount
+        print(f"{self.name} collects ${amount}.")
